@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="Search.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <form>
+            <i class="fas fa-search"></i>
+            <input type="text" name="" id="search-item" placeholder="Search foods" onkeyup="search()">
+        </form>
+
+        <div class="food-list" id="food-list">
+
+        <div class="food">
+            <img src="Images/burger/cheeseburger.jpg" alt="">
+            <div class="p-details">
+                <h2>Cheese burger</h2>
+                <h3>Rs 160</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/burger/chickenburger.jpg" alt="">
+            <div class="p-details">
+                <h2>Chicken burger</h2>
+                <h3>Rs 170</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/burger/chickenhamburger.jpg" alt="">
+            <div class="p-details">
+                <h2>Chickenham burger</h2>
+                <h3>Rs 190</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/burger/hamburger.jpg" alt="">
+            <div class="p-details">
+                <h2>Ham burger</h2>
+                <h3>Rs 180</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/burger/mixburger.jpg" alt="">
+            <div class="p-details">
+                <h2>Mix burger</h2>
+                <h3>Rs 170</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/burger/vegburger.webp" alt="">
+            <div class="p-details">
+                <h2>Veg burger</h2>
+                <h3>Rs 140</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/momo/buffmomo.jpeg" alt="">
+            <div class="p-details">
+                <h2>Buff momo</h2>
+                <h3>Rs 100</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/momo/chickenmomo.jpg" alt="">
+            <div class="p-details">
+                <h2>Chicken momo</h2>
+                <h3>Rs 120</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/momo/cmomo.jpeg" alt="">
+            <div class="p-details">
+                <h2>C momo</h2>
+                <h3>Rs 140</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/momo/jholmomo.jpg" alt="">
+            <div class="p-details">
+                <h2>Jhol momo</h2>
+                <h3>Rs 120</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/momo/momoplatter.jpg" alt="">
+            <div class="p-details">
+                <h2>Momo platter</h2>
+                <h3>Rs 350</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/momo/sadhekomomo.jpg" alt="">
+            <div class="p-details">
+                <h2>Sadheko momo</h2>
+                <h3>Rs 140</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/biryani/Ambur-Chicken-Biryani.jpg" alt="">
+            <div class="p-details">
+                <h2>Chicken Curry biryani</h2>
+                <h3>Rs 160</h3>
+            </div>
+        </div>
+
+
+        <div class="food">
+            <img src="Images/biryani/Chicken-Biryani-hyd.jpg" alt="">
+            <div class="p-details">
+                <h2>Hyd Chicken biryani</h2>
+                <h3>Rs 220</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/biryani/egg-biryani.jpeg" alt="">
+            <div class="p-details">
+                <h2>Egg biryani</h2>
+                <h3>Rs 140</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/biryani/goan-fish-biryani.jpg" alt="">
+            <div class="p-details">
+                <h2>Goan Fish biryani</h2>
+                <h3>Rs 190</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/biryani/hyd-Mutton-Biryani.jpg" alt="">
+            <div class="p-details">
+                <h2>Hyd Mutton biryani</h2>
+                <h3>Rs 300</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/biryani/kamrupi-biryani.jpg" alt="">
+            <div class="p-details">
+                <h2>Kamrupi biryani</h2>
+                <h3>Rs 180</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/biryani/kashmiri.pulao.jpg" alt="">
+            <div class="p-details">
+                <h2>Kashmiri pulao</h2>
+                <h3>Rs 170</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/biryani/memonibiryani.png" alt="">
+            <div class="p-details">
+                <h2>Memoni biryani</h2>
+                <h3>Rs 200</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/biryani/mughlai-biryani.jpg" alt="">
+            <div class="p-details">
+                <h2>Mughlai biryani</h2>
+                <h3>Rs 165</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/chowmin/buffchowmin.jpg" alt="">
+            <div class="p-details">
+                <h2>Buff chowmin</h2>
+                <h3>Rs 150</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/chowmin/chickenchowmin.webp" alt="">
+            <div class="p-details">
+                <h2>Chicken chowmin</h2>
+                <h3>Rs 160</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/chowmin/eggchowmin.jpg" alt="">
+            <div class="p-details">
+                <h2>Egg chowmin</h2>
+                <h3>Rs 130</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/chowmin/mixchowmin.jpg" alt="">
+            <div class="p-details">
+                <h2>Mix chowmin</h2>
+                <h3>Rs 140</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/chowmin/vegchowmin.jpg" alt="">
+            <div class="p-details">
+                <h2>Veg chowmin</h2>
+                <h3>Rs 120</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/pakoda/aalupakoda.jpg" alt="">
+            <div class="p-details">
+                <h2>Aalu pakoda</h2>
+                <h3>Rs 80</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/pakoda/chickenpakora.jpg" alt="">
+            <div class="p-details">
+                <h2>Chicken pakoda</h2>
+                <h3>Rs 160</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/pakoda/eggplantpakoda.jpg" alt="">
+            <div class="p-details">
+                <h2>Eggplant pakoda</h2>
+                <h3>Rs 70</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/pakoda/mixpakoda.jpg" alt="">
+            <div class="p-details">
+                <h2>Mix pakoda</h2>
+                <h3>Rs 90</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/pakoda/Onionpakoda.jpg" alt="">
+            <div class="p-details">
+                <h2>Onion pakoda</h2>
+                <h3>Rs 70</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/pakoda/paneerpakoda.jpg" alt="">
+            <div class="p-details">
+                <h2>Paneer pakoda</h2>
+                <h3>Rs 150</h3>
+            </div>
+        </div>
+
+
+        <div class="food">
+            <img src="Images/pizza/cheesepizza.jpg" alt="">
+            <div class="p-details">
+                <h2>Cheese pizza</h2>
+                <h3>Rs 220</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/pizza/chickenpizza.jpg" alt="">
+            <div class="p-details">
+                <h2>Chicken pizza</h2>
+                <h3>Rs 260</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/pizza/mixcheesepizza.jpg" alt="">
+            <div class="p-details">
+                <h2>Mix Cheese pizza</h2>
+                <h3>Rs 270</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/pizza/mixpizza.jpg" alt="">
+            <div class="p-details">
+                <h2>Mix pizza</h2>
+                <h3>Rs 230</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/pizza/sausagepizza.jpg" alt="">
+            <div class="p-details">
+                <h2>Sausage pizza</h2>
+                <h3>Rs 240</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/pizza/vegpizza.jpg" alt="">
+            <div class="p-details">
+                <h2>Veg pizza</h2>
+                <h3>Rs 180</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/beverage/charged6.png" alt="">
+            <div class="p-details">
+                <h2>Charged6</h2>
+                <h3>Rs 60</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/beverage/coke1.webp" alt="">
+            <div class="p-details">
+                <h2>Coke</h2>
+                <h3>Rs 70</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/beverage/fanta2.jpg" alt="">
+            <div class="p-details">
+                <h2>Fanta</h2>
+                <h3>Rs 70</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/beverage/pepsi5.jpg" alt="">
+            <div class="p-details">
+                <h2>Pepsi</h2>
+                <h3>Rs 80</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/beverage/slice3.jpg" alt="">
+            <div class="p-details">
+                <h2>Slice</h2>
+                <h3>Rs 90</h3>
+            </div>
+        </div>
+
+        <div class="food">
+            <img src="Images/beverage/sprite4.png" alt="">
+            <div class="p-details">
+                <h2>Sprite</h2>
+                <h3>Rs 70</h3>
+            </div>
+        </div>
+
+
+    </div>
+
+    </section>
+    
+
+    <script src="Search.js"></script>
+</body>
+</html>
